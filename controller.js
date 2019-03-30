@@ -7,6 +7,7 @@ $(document).ready(function () {
     var questionLock = false;
     var numberOfQuestions;
     var score = 0;
+    localStorage.setItem('numberOfQuestions', JSON.stringify(numberOfQuestions));
 
 
     $.getJSON('activity.json', function (data) {
